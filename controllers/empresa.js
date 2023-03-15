@@ -28,11 +28,9 @@ const postEmpresas = async (req = request, res = response) => {
     const { nombre, correo, password, tipo } = req.body;
     const empresaDB = new Empresa({ nombre, correo, password, tipo });
 
-    //Encriptar password
     const salt = bcryptjs.genSaltSync();
     empresaDB.password = bcryptjs.hashSync(password, salt);
 
-    //Guardar en Base de datos
     await empresaDB.save();
 
     res.status(201).json({

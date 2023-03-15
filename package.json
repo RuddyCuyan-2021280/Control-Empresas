@@ -1,14 +1,14 @@
 {
   "name": "control_empresas",
   "version": "1.0.0",
-  "description": "Proyecto de control de empresas IN6BV",
+  "description": "Control de empresas IN6BV",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ostyn Guerra",
+  "author": "Ruddy Cuyan",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
